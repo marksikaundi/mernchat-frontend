@@ -10,6 +10,7 @@ export default function Register() {
     ev.preventDefault();
     const {data} = await axios.post('/register', {username,password});
     setLoggedInUsername(username);
+    setId(data.id);
   }
   return (
     <div className="bg-blue-50 h-screen flex items-center">
