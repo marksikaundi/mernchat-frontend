@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
-import Register from './Register'
-import axios from 'axios'
-import { UserContextProvider } from './UserContext'
+import Register from './Register';
+import axios from 'axios';
+import { UserContextProvider } from './UserContext';
 
 function App() {
 axios.defaults.baseURL = 'http://localhost:4000'
